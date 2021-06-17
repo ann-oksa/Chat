@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZFT-6v-vBz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za5-m2-1A8">
+                                <rect key="frame" x="109" y="412" width="197" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94449132680000003" green="0.92621272799999999" blue="0.87842464450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Start chat">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toChatVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjY-VZ-PFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.67540603690000001" green="0.7827068278" blue="0.68234553600000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pWr-dR-lDT"/>
+                    <connections>
+                        <segue destination="Aw1-Ts-h2t" kind="show" identifier="toChatVC" id="LCD-IU-kik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881.15942028985512" y="88.392857142857139"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="hTf-q4-xBs">
+            <objects>
+                <viewController id="Aw1-Ts-h2t" customClass="ChatViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArL-Xw-DP4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-Of-PeF">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="53E-oL-Jiy">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-tU-VFX">
+                                        <rect key="frame" x="8" y="681" width="398" height="33"/>
+                                        <color key="backgroundColor" red="0.63931477110000001" green="0.80128997099999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77517133949999995" green="0.69181537630000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="e6b-tU-VFX" firstAttribute="top" secondItem="53E-oL-Jiy" secondAttribute="bottom" constant="8" id="BB5-le-KUK"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0yg-3w-5wP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Mfc-U5-KJx"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tji-gx-lHG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="53E-oL-Jiy" firstAttribute="top" secondItem="tji-gx-lHG" secondAttribute="top" id="2CG-gN-gGC"/>
+                            <constraint firstItem="53E-oL-Jiy" firstAttribute="leading" secondItem="tji-gx-lHG" secondAttribute="leading" id="2Zm-ze-fQz"/>
+                            <constraint firstItem="tji-gx-lHG" firstAttribute="trailing" secondItem="53E-oL-Jiy" secondAttribute="trailing" id="OuH-MF-Rm1"/>
+                            <constraint firstItem="tji-gx-lHG" firstAttribute="bottom" secondItem="e6b-tU-VFX" secondAttribute="bottom" constant="8" id="eUQ-vs-n7k"/>
+                            <constraint firstItem="e6b-tU-VFX" firstAttribute="leading" secondItem="tji-gx-lHG" secondAttribute="leading" constant="8" id="vnk-aa-aGs"/>
+                            <constraint firstItem="tji-gx-lHG" firstAttribute="trailing" secondItem="e6b-tU-VFX" secondAttribute="trailing" constant="8" id="yAF-LK-57f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ryb-6J-uKd"/>
+                    <connections>
+                        <outlet property="msgTextview" destination="e6b-tU-VFX" id="rrW-WG-dQb"/>
+                        <outlet property="scrollView" destination="ipC-Of-PeF" id="YbB-7R-GjK"/>
+                        <outlet property="tableView" destination="53E-oL-Jiy" id="4hf-0s-hUY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NhN-w4-oCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662.3188405797102" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qO0-Cw-XEP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZFT-6v-vBz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="exZ-Rl-FMs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7yb-nu-n3A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0T-lC-Qj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
