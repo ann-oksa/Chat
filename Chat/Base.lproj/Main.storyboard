@@ -48,45 +48,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-Of-PeF">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="53E-oL-Jiy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </tableView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-tU-VFX">
-                                        <rect key="frame" x="8" y="681" width="398" height="33"/>
-                                        <color key="backgroundColor" red="0.63931477110000001" green="0.80128997099999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.77517133949999995" green="0.69181537630000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="e6b-tU-VFX" firstAttribute="top" secondItem="53E-oL-Jiy" secondAttribute="bottom" constant="8" id="BB5-le-KUK"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="0yg-3w-5wP"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Mfc-U5-KJx"/>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="53E-oL-Jiy">
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tji-gx-lHG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="53E-oL-Jiy" firstAttribute="top" secondItem="tji-gx-lHG" secondAttribute="top" id="2CG-gN-gGC"/>
-                            <constraint firstItem="53E-oL-Jiy" firstAttribute="leading" secondItem="tji-gx-lHG" secondAttribute="leading" id="2Zm-ze-fQz"/>
-                            <constraint firstItem="tji-gx-lHG" firstAttribute="trailing" secondItem="53E-oL-Jiy" secondAttribute="trailing" id="OuH-MF-Rm1"/>
-                            <constraint firstItem="tji-gx-lHG" firstAttribute="bottom" secondItem="e6b-tU-VFX" secondAttribute="bottom" constant="8" id="eUQ-vs-n7k"/>
-                            <constraint firstItem="e6b-tU-VFX" firstAttribute="leading" secondItem="tji-gx-lHG" secondAttribute="leading" constant="8" id="vnk-aa-aGs"/>
-                            <constraint firstItem="tji-gx-lHG" firstAttribute="trailing" secondItem="e6b-tU-VFX" secondAttribute="trailing" constant="8" id="yAF-LK-57f"/>
+                            <constraint firstItem="53E-oL-Jiy" firstAttribute="bottom" secondItem="tji-gx-lHG" secondAttribute="bottom" id="3kP-BG-E86"/>
+                            <constraint firstItem="tji-gx-lHG" firstAttribute="bottom" secondItem="53E-oL-Jiy" secondAttribute="bottom" id="LEg-JU-H9P"/>
+                            <constraint firstItem="53E-oL-Jiy" firstAttribute="leading" secondItem="tji-gx-lHG" secondAttribute="leading" id="Xtj-iF-h9s"/>
+                            <constraint firstItem="tji-gx-lHG" firstAttribute="top" secondItem="53E-oL-Jiy" secondAttribute="top" constant="1" id="aZO-lI-AQi"/>
+                            <constraint firstItem="tji-gx-lHG" firstAttribute="trailing" secondItem="53E-oL-Jiy" secondAttribute="trailing" id="yZB-36-ATl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ryb-6J-uKd"/>
                     <connections>
-                        <outlet property="msgTextview" destination="e6b-tU-VFX" id="rrW-WG-dQb"/>
-                        <outlet property="scrollView" destination="ipC-Of-PeF" id="YbB-7R-GjK"/>
                         <outlet property="tableView" destination="53E-oL-Jiy" id="4hf-0s-hUY"/>
                     </connections>
                 </viewController>
@@ -114,9 +92,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

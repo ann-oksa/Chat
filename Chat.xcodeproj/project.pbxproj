@@ -14,8 +14,8 @@
 		CA73B4542672154D00CDFAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA73B4532672154D00CDFAE0 /* Assets.xcassets */; };
 		CA73B4572672154D00CDFAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA73B4552672154D00CDFAE0 /* LaunchScreen.storyboard */; };
 		CA73B45F267216A400CDFAE0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73B45E267216A400CDFAE0 /* ChatViewController.swift */; };
-		CA73B46226721ABB00CDFAE0 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73B46026721ABB00CDFAE0 /* ChatTableViewCell.swift */; };
-		CA73B46326721ABB00CDFAE0 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA73B46126721ABB00CDFAE0 /* ChatTableViewCell.xib */; };
+		CA8121E3267C6977008141D7 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8121E1267C6977008141D7 /* ChatTableViewCell.swift */; };
+		CA8121E4267C6977008141D7 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8121E2267C6977008141D7 /* ChatTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		CA73B4562672154D00CDFAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA73B4582672154D00CDFAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA73B45E267216A400CDFAE0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		CA73B46026721ABB00CDFAE0 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
-		CA73B46126721ABB00CDFAE0 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		CA8121E1267C6977008141D7 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		CA8121E2267C6977008141D7 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 				CA73B44C2672154600CDFAE0 /* SceneDelegate.swift */,
 				CA73B44E2672154600CDFAE0 /* ViewController.swift */,
 				CA73B45E267216A400CDFAE0 /* ChatViewController.swift */,
-				CA73B46026721ABB00CDFAE0 /* ChatTableViewCell.swift */,
-				CA73B46126721ABB00CDFAE0 /* ChatTableViewCell.xib */,
+				CA8121E1267C6977008141D7 /* ChatTableViewCell.swift */,
+				CA8121E2267C6977008141D7 /* ChatTableViewCell.xib */,
 				CA73B4502672154600CDFAE0 /* Main.storyboard */,
 				CA73B4532672154D00CDFAE0 /* Assets.xcassets */,
 				CA73B4552672154D00CDFAE0 /* LaunchScreen.storyboard */,
@@ -134,7 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA73B4572672154D00CDFAE0 /* LaunchScreen.storyboard in Resources */,
-				CA73B46326721ABB00CDFAE0 /* ChatTableViewCell.xib in Resources */,
+				CA8121E4267C6977008141D7 /* ChatTableViewCell.xib in Resources */,
 				CA73B4542672154D00CDFAE0 /* Assets.xcassets in Resources */,
 				CA73B4522672154600CDFAE0 /* Main.storyboard in Resources */,
 			);
@@ -149,7 +149,7 @@
 			files = (
 				CA73B44F2672154600CDFAE0 /* ViewController.swift in Sources */,
 				CA73B44B2672154600CDFAE0 /* AppDelegate.swift in Sources */,
-				CA73B46226721ABB00CDFAE0 /* ChatTableViewCell.swift in Sources */,
+				CA8121E3267C6977008141D7 /* ChatTableViewCell.swift in Sources */,
 				CA73B45F267216A400CDFAE0 /* ChatViewController.swift in Sources */,
 				CA73B44D2672154600CDFAE0 /* SceneDelegate.swift in Sources */,
 			);
